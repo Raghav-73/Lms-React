@@ -37,7 +37,7 @@ import TermsCondition from "./components/pages/termsCondition";
 import Wishlist from "./components/pages/wishlist";
 
 //harish
-import {Home} from "./components/home";
+import { Home } from "./components/home";
 import { Home2 } from "./components/home2";
 import { Home3 } from "./components/home3";
 import { Home4 } from "./components/home4";
@@ -99,7 +99,7 @@ import PurchaseHistory from "./components/student/purchaseHistory";
 import ViewInvoice from "./components/student/invoice/viewInvoice";
 import NewPassword from "./components/pages/newPassword";
 // import config from 'config';
- const Approuter = () => {
+const Approuter = () => {
 
   // useEffect(() => {
   //   if(window.location.pathname === "/"){
@@ -109,173 +109,173 @@ import NewPassword from "./components/pages/newPassword";
   // },[])
   return (
     // <BrowserRouter basename={`${config.publicPath}`}>
-    <BrowserRouter basename="/reactjs">
-    <Routes  >
-    {/* <Route path="/" element={<Home />} /> */}
-    <Route path="/" element={<Home />} />
-      <Route path="/home2" element={<Home2 />} />
-      <Route path="/home3" element={<Home3 />} />
-      <Route path="/home4" element={<Home4 />} />
-      <Route path="/instructor-dashboard" element={<Dashboard />} />
-      <Route path="/instructor-list" element={<InstructorList />} />
-      <Route path="/instructor-grid" element={<InstructorGrid />} />
-      <Route path="/instructor-course" element={<InstructorCourse />} />
+    <BrowserRouter basename="/">
+      <Routes  >
+        {/* <Route path="/" element={<Home />} /> */}
+        <Route path="/" element={<Home />} />
+        <Route path="/home2" element={<Home2 />} />
+        <Route path="/home3" element={<Home3 />} />
+        <Route path="/home4" element={<Home4 />} />
+        <Route path="/instructor-dashboard" element={<Dashboard />} />
+        <Route path="/instructor-list" element={<InstructorList />} />
+        <Route path="/instructor-grid" element={<InstructorGrid />} />
+        <Route path="/instructor-course" element={<InstructorCourse />} />
 
-      {/* Blog */}
-      <Route path="/blog-list" element={<BlogList />} />
-      <Route path="/blog-grid" element={<BlogGrid />} />
-      <Route path="/blog-masonry" element={<BlogMasonry />} />
-      <Route path="/blog-modern" element={<BlogModern />} />
-      <Route path="/blog-details" element={<BlogDetails />} />
-       
-       {/* Pages */}
-       <Route path="/page-notification" element={<Notification />} />
-       <Route path="/pricing-plan" element={<PricingPlan />} />
-       <Route path="/pricing-plan2" element={<PricingPlan2 />} />
-       <Route path="/wishlist" element={<Wishlist />} />
-       <Route path="/add-course" element={<AddCourse />} />
-       <Route path="/course-list" element={<CourseList />} />
-       {/* <Route path="/course-message" element={<CourseMessage />} /> */}
-       <Route path="/course-grid" element={<CourseGrid />} />
-       <Route path="/course-details" element={<CourseDetails />} />
-       <Route path="/course-details1" element={<CourseDetails1 />} />
-       <Route path="/course-details2" element={<CourseDetails2 />} />
-       <Route path="/course-lesson" element={<CourseLesson />} />
-       <Route path="/come-soon" element={<ComingSoon/>} />
-       <Route path="/error-404" element={<Error404/>} />
-       <Route path="/error-500" element={<Error500/>} />
-       <Route path="/under-construction" element={<UnderConstruction/>} />
-       <Route path="/faq" element={<Faq/>} />
-       <Route path="/support" element={<Support/>} />
-       <Route path="/job-category" element={<JobCategory/>} />
-       <Route path="/cart" element={<Cart/>} />
-       <Route path="/checkout" element={<Checkout/>} />
-       <Route path="/login" element={<Login/>} />
-       <Route path="/new-password" element={<NewPassword/>} />
-       <Route path="/register" element={<Register/>} />
-       <Route path="/register1" element={<RegisterOne/>} />
-       <Route path="/register2" element={<RegisterTwo/>} />
-       <Route path="/register3" element={<RegisterThree/>} />
-       <Route path="/register4" element={<RegisterFour/>} />
-       <Route path="/register5" element={<RegisterFive/>} />
-       <Route path="/forgot-password" element={<ForgotPassword/>} />
-       <Route path="/term-condition" element={<TermsCondition/>} />
-       <Route path="/privacy-policy" element={<PrivacyPolicy/>} />
+        {/* Blog */}
+        <Route path="/blog-list" element={<BlogList />} />
+        <Route path="/blog-grid" element={<BlogGrid />} />
+        <Route path="/blog-masonry" element={<BlogMasonry />} />
+        <Route path="/blog-modern" element={<BlogModern />} />
+        <Route path="/blog-details" element={<BlogDetails />} />
 
-{/* Instructor Routes */}
-<Route path="/instructor-dashboard" element={<Dashboard />} />
-      <Route path="/instructor-list" element={<InstructorList />} />
-      <Route path="/instructor-grid" element={<InstructorGrid />} />
-      <Route path="/instructor-course" element={<InstructorCourse />} />
-      <Route path="/instructor-reviews" element={<InstructorReviews />} />
-      <Route path="/instructor-earnings" element={<InstructorEarnings />} />
-      <Route path="/instructor-orders" element={<InstructorOrders />} />
-      <Route path="/instructor-payouts" element={<InstructorPayouts />} />
-      <Route path="/instructor-tickets" element={<InstructorTickets />} />
-      <Route path="/instructor-profile" element={<InstructorProfile />} />
-      <Route
-        path="/instructor-edit-profile"
-        element={<InstructorEditProfile />}
-      />
-      <Route path="/instructor-security" element={<InstructorSecurity />} />
-      <Route
-        path="/instructor-social-profile"
-        element={<InstructorSocialProfile />}
-      />
-      <Route
-        path="/instructor-notifications"
-        element={<InstructorNotification />}
-      />
-      <Route path="/instructor-chat" element={<InstructorChat />} />
-      <Route
-        path="/instructor-delete-profile"
-        element={<InstructorDeleteProfile />}
-      />
-      <Route path="/instructor-edit" element={<InstructorEdit />} />
-      <Route path="/instructor-grid-2" element={<InstructorGrid2 />} />
-      <Route
-        path="/instructor-linked-account"
-        element={<InstructorLinkedAccount />}
-      />
-      <Route
-        path="/instructor-new-tickets"
-        element={<InstructorNewTickets />}
-      />
-      <Route
-        path="/instructor-profile-privacy"
-        element={<InstructorProfilePrivacy />}
-      />
-      <Route
-        path="/instructor-student-grid"
-        element={<InstructorStudentGrid />}
-      />
-      <Route
-        path="/instructor-student-list"
-        element={<InstructorStudentList />}
-      />
-      <Route
-        path="/deposit-instructor-dashboard"
-        element={<InstructorDepositDashboard />}
-      />
-      <Route path="/dashboard-instructor" element={<DashboardInstructor />} />
-      <Route path="/withdrawal-instructor" element={<WithdrawalInstructor />} />
-      <Route path="/deposit-instructor" element={<DepositInstructor />} />
-      <Route
-        path="/transactions-instructor"
-        element={<TransactionInstructor />}
-      />
+        {/* Pages */}
+        <Route path="/page-notification" element={<Notification />} />
+        <Route path="/pricing-plan" element={<PricingPlan />} />
+        <Route path="/pricing-plan2" element={<PricingPlan2 />} />
+        <Route path="/wishlist" element={<Wishlist />} />
+        <Route path="/add-course" element={<AddCourse />} />
+        <Route path="/course-list" element={<CourseList />} />
+        {/* <Route path="/course-message" element={<CourseMessage />} /> */}
+        <Route path="/course-grid" element={<CourseGrid />} />
+        <Route path="/course-details" element={<CourseDetails />} />
+        <Route path="/course-details1" element={<CourseDetails1 />} />
+        <Route path="/course-details2" element={<CourseDetails2 />} />
+        <Route path="/course-lesson" element={<CourseLesson />} />
+        <Route path="/come-soon" element={<ComingSoon />} />
+        <Route path="/error-404" element={<Error404 />} />
+        <Route path="/error-500" element={<Error500 />} />
+        <Route path="/under-construction" element={<UnderConstruction />} />
+        <Route path="/faq" element={<Faq />} />
+        <Route path="/support" element={<Support />} />
+        <Route path="/job-category" element={<JobCategory />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/checkout" element={<Checkout />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/new-password" element={<NewPassword />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/register1" element={<RegisterOne />} />
+        <Route path="/register2" element={<RegisterTwo />} />
+        <Route path="/register3" element={<RegisterThree />} />
+        <Route path="/register4" element={<RegisterFour />} />
+        <Route path="/register5" element={<RegisterFive />} />
+        <Route path="/forgot-password" element={<ForgotPassword />} />
+        <Route path="/term-condition" element={<TermsCondition />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
 
-      {/*Student Routes  */}
-      <Route path="/setting-edit-profile" element={<StudentEditProfile />} />
-      <Route path="/setting-student-accounts" element={<StudentAccounts />} />
-      <Route path="/setting-student-billing" element={<StudentBilling />} />
-      <Route
-        path="/setting-student-delete-profile"
-        element={<StudentDeleteProfile />}
-      />
-      <Route path="/setting-student-invoice" element={<StudentInvoice />} />
-      <Route path="/view-invoice" element={<ViewInvoice />} />
-      <Route
-        path="/setting-student-notification"
-        element={<StudentNotification />}
-      />
-      <Route path="/setting-student-payment" element={<StudentPayment />} />
-      <Route path="/setting-student-privacy" element={<StudentPrivacy />} />
-      <Route path="/setting-student-referral" element={<StudentReferral />} />
-      <Route path="/setting-student-security" element={<StudentSecurity />} />
-      <Route
-        path="/setting-student-social-profile"
-        element={<StudentSocialProfile />}
-      />
-      <Route
-        path="/setting-student-subscription"
-        element={<StudentSubscription />}
-      />
-      <Route
-        path="/setting-support-new-tickets"
-        element={<StudentNewTickets />}
-      />
-      <Route path="/setting-support-tickets" element={<StudentTickets />} />
-      <Route
-        path="/setting-support-view-tickets"
-        element={<StudentViewTickets />}
-      />
-      <Route
-        path="/deposit-student-dashboard"
-        element={<StudentDepositDashboard />}
-      />
-      <Route path="/students-profile" element={<StudentProfile />} />
-      <Route path="/students-grid" element={<StudentsGrid />} />
-      <Route path="/students-grid2" element={<StudentsGrid2 />} />
-      <Route path="/students-list" element={<StudentsList />} />
-      <Route path="/course-student" element={<CourseStudent />} />
-      <Route path="/course-wishlist" element={<CourseWishlist />} />
-      <Route path="/course-message" element={<CourseMessage />} />
-      <Route path="/purchase-history" element={<PurchaseHistory />} />
-      <Route path="/deposit-student" element={<DepositStudent />} />
-      <Route path="/transactions-student" element={<TransactionStudent />} />
-    
-    </Routes>
+        {/* Instructor Routes */}
+        <Route path="/instructor-dashboard" element={<Dashboard />} />
+        <Route path="/instructor-list" element={<InstructorList />} />
+        <Route path="/instructor-grid" element={<InstructorGrid />} />
+        <Route path="/instructor-course" element={<InstructorCourse />} />
+        <Route path="/instructor-reviews" element={<InstructorReviews />} />
+        <Route path="/instructor-earnings" element={<InstructorEarnings />} />
+        <Route path="/instructor-orders" element={<InstructorOrders />} />
+        <Route path="/instructor-payouts" element={<InstructorPayouts />} />
+        <Route path="/instructor-tickets" element={<InstructorTickets />} />
+        <Route path="/instructor-profile" element={<InstructorProfile />} />
+        <Route
+          path="/instructor-edit-profile"
+          element={<InstructorEditProfile />}
+        />
+        <Route path="/instructor-security" element={<InstructorSecurity />} />
+        <Route
+          path="/instructor-social-profile"
+          element={<InstructorSocialProfile />}
+        />
+        <Route
+          path="/instructor-notifications"
+          element={<InstructorNotification />}
+        />
+        <Route path="/instructor-chat" element={<InstructorChat />} />
+        <Route
+          path="/instructor-delete-profile"
+          element={<InstructorDeleteProfile />}
+        />
+        <Route path="/instructor-edit" element={<InstructorEdit />} />
+        <Route path="/instructor-grid-2" element={<InstructorGrid2 />} />
+        <Route
+          path="/instructor-linked-account"
+          element={<InstructorLinkedAccount />}
+        />
+        <Route
+          path="/instructor-new-tickets"
+          element={<InstructorNewTickets />}
+        />
+        <Route
+          path="/instructor-profile-privacy"
+          element={<InstructorProfilePrivacy />}
+        />
+        <Route
+          path="/instructor-student-grid"
+          element={<InstructorStudentGrid />}
+        />
+        <Route
+          path="/instructor-student-list"
+          element={<InstructorStudentList />}
+        />
+        <Route
+          path="/deposit-instructor-dashboard"
+          element={<InstructorDepositDashboard />}
+        />
+        <Route path="/dashboard-instructor" element={<DashboardInstructor />} />
+        <Route path="/withdrawal-instructor" element={<WithdrawalInstructor />} />
+        <Route path="/deposit-instructor" element={<DepositInstructor />} />
+        <Route
+          path="/transactions-instructor"
+          element={<TransactionInstructor />}
+        />
+
+        {/*Student Routes  */}
+        <Route path="/setting-edit-profile" element={<StudentEditProfile />} />
+        <Route path="/setting-student-accounts" element={<StudentAccounts />} />
+        <Route path="/setting-student-billing" element={<StudentBilling />} />
+        <Route
+          path="/setting-student-delete-profile"
+          element={<StudentDeleteProfile />}
+        />
+        <Route path="/setting-student-invoice" element={<StudentInvoice />} />
+        <Route path="/view-invoice" element={<ViewInvoice />} />
+        <Route
+          path="/setting-student-notification"
+          element={<StudentNotification />}
+        />
+        <Route path="/setting-student-payment" element={<StudentPayment />} />
+        <Route path="/setting-student-privacy" element={<StudentPrivacy />} />
+        <Route path="/setting-student-referral" element={<StudentReferral />} />
+        <Route path="/setting-student-security" element={<StudentSecurity />} />
+        <Route
+          path="/setting-student-social-profile"
+          element={<StudentSocialProfile />}
+        />
+        <Route
+          path="/setting-student-subscription"
+          element={<StudentSubscription />}
+        />
+        <Route
+          path="/setting-support-new-tickets"
+          element={<StudentNewTickets />}
+        />
+        <Route path="/setting-support-tickets" element={<StudentTickets />} />
+        <Route
+          path="/setting-support-view-tickets"
+          element={<StudentViewTickets />}
+        />
+        <Route
+          path="/deposit-student-dashboard"
+          element={<StudentDepositDashboard />}
+        />
+        <Route path="/students-profile" element={<StudentProfile />} />
+        <Route path="/students-grid" element={<StudentsGrid />} />
+        <Route path="/students-grid2" element={<StudentsGrid2 />} />
+        <Route path="/students-list" element={<StudentsList />} />
+        <Route path="/course-student" element={<CourseStudent />} />
+        <Route path="/course-wishlist" element={<CourseWishlist />} />
+        <Route path="/course-message" element={<CourseMessage />} />
+        <Route path="/purchase-history" element={<PurchaseHistory />} />
+        <Route path="/deposit-student" element={<DepositStudent />} />
+        <Route path="/transactions-student" element={<TransactionStudent />} />
+
+      </Routes>
     </BrowserRouter>
   );
 };
