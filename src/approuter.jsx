@@ -2,9 +2,9 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import BlogDetails from "./components/blog/blogDetails";
 import BlogGrid from "./components/blog/blogGrid";
-import BlogList from "./components/blog/bloglist";
-import BlogMasonry from "./components/blog/blogMasonry";
-import BlogModern from "./components/blog/blogModern";
+// import BlogList from "./components/blog/bloglist";
+// import BlogMasonry from "./components/blog/blogMasonry";
+// import BlogModern from "./components/blog/blogModern";
 import Cart from "./components/pages/cart";
 import JobCategory from "./components/pages/category";
 import Checkout from "./components/pages/checkout";
@@ -37,10 +37,10 @@ import TermsCondition from "./components/pages/termsCondition";
 import Wishlist from "./components/pages/wishlist";
 
 //harish
-import { Home } from "./components/home";
-import { Home2 } from "./components/home2";
-import { Home3 } from "./components/home3";
-import { Home4 } from "./components/home4";
+// import { Home } from "./components/home";
+// import { Home2 } from "./components/home2";
+import Home from "./components/home";
+// import { Home4 } from "./components/home4";
 import { Dashboard } from "./components/instructor/dashboard";
 import { InstructorList } from "./components/instructor/list";
 import InstructorGrid from "./components/instructor/grid";
@@ -98,34 +98,18 @@ import CourseStudent from "./components/student/courseStudent";
 import PurchaseHistory from "./components/student/purchaseHistory";
 import ViewInvoice from "./components/student/invoice/viewInvoice";
 import NewPassword from "./components/pages/newPassword";
-// import config from 'config';
-const Approuter = () => {
 
-  // useEffect(() => {
-  //   if(window.location.pathname === "/"){
-  //     console.log(window.location.pathname)
-  //     window.location.href = '/reactjs'
-  //   }
-  // },[])
+const Approuter = () => {
   return (
-    // <BrowserRouter basename={`${config.publicPath}`}>
     <BrowserRouter basename="/">
       <Routes  >
-        {/* <Route path="/" element={<Home />} /> */}
         <Route path="/" element={<Home />} />
-        <Route path="/home2" element={<Home2 />} />
-        <Route path="/home3" element={<Home3 />} />
-        <Route path="/home4" element={<Home4 />} />
         <Route path="/instructor-dashboard" element={<Dashboard />} />
         <Route path="/instructor-list" element={<InstructorList />} />
-        <Route path="/instructor-grid" element={<InstructorGrid />} />
         <Route path="/instructor-course" element={<InstructorCourse />} />
 
         {/* Blog */}
-        <Route path="/blog-list" element={<BlogList />} />
         <Route path="/blog-grid" element={<BlogGrid />} />
-        <Route path="/blog-masonry" element={<BlogMasonry />} />
-        <Route path="/blog-modern" element={<BlogModern />} />
         <Route path="/blog-details" element={<BlogDetails />} />
 
         {/* Pages */}
@@ -135,7 +119,6 @@ const Approuter = () => {
         <Route path="/wishlist" element={<Wishlist />} />
         <Route path="/add-course" element={<AddCourse />} />
         <Route path="/course-list" element={<CourseList />} />
-        {/* <Route path="/course-message" element={<CourseMessage />} /> */}
         <Route path="/course-grid" element={<CourseGrid />} />
         <Route path="/course-details" element={<CourseDetails />} />
         <Route path="/course-details1" element={<CourseDetails1 />} />

@@ -15,7 +15,7 @@ import {
 } from "../../imagepath";
 import { Link } from "react-router-dom";
 
-export const TopCategories2 = () => {
+const TopCategories = () => {
   var course = {
     //autoWidth: true,
     items: 2,
@@ -676,3 +676,4 @@ export const TopCategories2 = () => {
     </OwlCarousel>
   );
 };
+export default TopCategories;

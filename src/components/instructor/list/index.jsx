@@ -21,7 +21,7 @@ export const InstructorList = () => {
     <div className="main-wrapper">
       <InstructorHeader activeMenu={"List"} />
       {/* BreadcrumItem */}
-      <div className="breadcrumb-bar">
+      {/* <div className="breadcrumb-bar">
         <div className="container">
           <div className="row">
             <div className="col-md-12 col-12">
@@ -39,7 +39,7 @@ export const InstructorList = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* BreadcrumItem */}
       {/* Page Wrapper */}
       <div className="page-content">
@@ -469,7 +469,7 @@ export const InstructorList = () => {
                       <Link
                         className="page-link"
                         to="#;"
-                       
+
                       >
                         <i className="fas fa-angle-left"></i>
                       </Link>
@@ -553,7 +553,7 @@ export const InstructorList = () => {
                           <input
                             type="checkbox"
                             name="select_specialist"
-                          
+
                           />
                           <span className="checkmark"></span> General (2)
                         </label>
@@ -563,7 +563,7 @@ export const InstructorList = () => {
                           <input
                             type="checkbox"
                             name="select_specialist"
-                            
+
                           />
                           <span className="checkmark"></span> IT & Software (2)
                         </label>
@@ -623,7 +623,7 @@ export const InstructorList = () => {
                           <input
                             type="checkbox"
                             name="select_specialist"
-                           
+
                           />
                           <span className="checkmark"></span> Nicole Brown
                         </label>
@@ -658,7 +658,7 @@ export const InstructorList = () => {
                           <input
                             type="radio"
                             name="select_specialist"
-                           
+
                           />
                           <span className="checkmark"></span> Paid (15)
                         </label>

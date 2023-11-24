@@ -7,7 +7,8 @@ import {
   Course11,
   Course12,
 } from "../../imagepath";
-import { InstructorHeader } from "../../instructor/header";
+import InstructorHeader from "../../../components/header";
+// import { InstructorHeader } from "../header/index";
 import InstructorSidebar from "../sidebar";
 
 export const Dashboard = () => {
@@ -406,12 +407,12 @@ export const Dashboard = () => {
               </div>
             </div>
             {/* Instructor Dashboard */}
-            </div>
           </div>
         </div>
-
-        <Footer />
       </div>
-    
+
+      <Footer />
+    </div>
+
   );
 };

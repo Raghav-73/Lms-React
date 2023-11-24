@@ -22,7 +22,7 @@ import StudentHeader from "../header";
 export default function StudentsList() {
   return (
     <div className="main-wrapper">
-      <StudentHeader activeMenu={"List"} />
+      <StudentHeader />
       {/* BreadCrumb */}
       <div className="breadcrumb-bar">
         <div className="container">
@@ -686,7 +686,7 @@ export default function StudentsList() {
                       <Link
                         className="page-link"
                         to="#;"
-                       
+
                       >
                         <i className="fas fa-angle-left"></i>
                       </Link>

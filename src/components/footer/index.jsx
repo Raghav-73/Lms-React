@@ -1,148 +1,181 @@
 import React from "react";
+import { Facebook, Linkedin, Twitter, Youtube } from "react-feather";
 import { Link } from "react-router-dom";
-import { Icon19, Icon20, Icon21, logo } from "../imagepath";
+import { logoPng } from "../imagepath";
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer footer-three">
       {/* Footer Top */}
-      <div className="footer-top">
+      <div className="footer-three-top" data-aos="fade-up">
         <div className="container">
-          <div className="row">
-            <div className="col-lg-4 col-md-6">
-              {/* Footer Widget */}
-              <div className="footer-widget footer-about">
-                <div className="footer-logo">
-                  <img src={logo} alt="logo" />
-                </div>
-                <div className="footer-about-content">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                    consequat mauris Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit. Ut consequat mauris
-                  </p>
-                </div>
-              </div>
-              {/* /Footer Widget */}
-            </div>
-            <div className="col-lg-2 col-md-6">
-              {/* Footer Widget */}
-              <div className="footer-widget footer-menu">
-                <h2 className="footer-title">For Instructor</h2>
-                <ul>
-                  <li>
-                    <Link to="/instructor-profile">Profile</Link>
-                  </li>
-                  <li>
-                    <Link to="/login">Login</Link>
-                  </li>
-                  <li>
-                    <Link to="/register">Register</Link>
-                  </li>
-                  <li>
-                    <Link to="/instructor-list">Instructor</Link>
-                  </li>
-                  <li>
-                    <Link to="/deposit-instructor-dashboard"> Dashboard</Link>
-                  </li>
-                </ul>
-              </div>
-              {/* /Footer Widget */}
-            </div>
-            <div className="col-lg-2 col-md-6">
-              {/* Footer Widget */}
-              <div className="footer-widget footer-menu">
-                <h2 className="footer-title">For Student</h2>
-                <ul>
-                  <li>
-                    <Link to="/students-profile">Profile</Link>
-                  </li>
-                  <li>
-                    <Link to="/login">Login</Link>
-                  </li>
-                  <li>
-                    <Link to="/register">Register</Link>
-                  </li>
-                  <li>
-                    <Link to="/students-list">Student</Link>
-                  </li>
-                  <li>
-                    <Link to="/deposit-student-dashboard"> Dashboard</Link>
-                  </li>
-                </ul>
-              </div>
-              {/* /Footer Widget */}
-            </div>
-            <div className="col-lg-4 col-md-6">
-              {/* Footer Widget */}
-              <div className="footer-widget footer-contact">
-                <h2 className="footer-title">News letter</h2>
-                <div className="news-letter">
-                  <form>
-                    <input
-                      type="text"
-                      className="form-control"
-                      placeholder="Enter your email address"
-                      name="email"
-                    />
-                  </form>
-                </div>
-                <div className="footer-contact-info">
-                  <div className="footer-address">
-                    <img src={Icon20} alt="" className="img-fluid" />
+          <div className="footer-three-top-content">
+            <div className="row align-items-center">
+              <div className="col-lg-6 col-md-6 col-12">
+                {/* Footer Widget */}
+                <div className="footer-widget-three footer-about">
+                  <div className="footer-three-logo">
+                    <img className="img-fluid" src={logoPng} alt="logo" />
+                  </div>
+                  <div className="footer-three-about">
                     <p>
-                      {" "}
-                      3556 Beech Street, San Francisco,
-                      <br /> California, CA 94108{" "}
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Sit nulla gravida ut elit arcu egestas felis. Scelerisque
+                      at in magna dolor massa ipsum arcu lacus. Lobortis posuere
+                      justo nunc diam ac massa. Maecenas tellus adipiscing ac
+                      fames ut ac posuere. Aliquam, integer proin hendrerit
+                      euismod et.{" "}
                     </p>
                   </div>
-                  <p>
-                    <img src={Icon19} alt="" className="img-fluid" />
-                    dreamslms@example.com
-                  </p>
-                  <p className="mb-0">
-                    <img src={Icon21} alt="" className="img-fluid" />
-                    +19 123-456-7890
-                  </p>
+                  <div className="newsletter-title">
+                    <h6>Get Updates</h6>
+                  </div>
+                  <div className="box-form-newsletter">
+                    <form className="form-newsletter">
+                      {/* <img className="emailSvg" src={EmailSvg} alt="" /> */}
+                      <input
+                        className="input-newsletter"
+                        type="text"
+                        placeholder="Enter your email here"
+                      />
+                      <button className="btn btn-default font-heading icon-send-letter">
+                        Subscribe Now
+                      </button>
+                    </form>
+                  </div>
                 </div>
+                {/* Footer Widget */}
               </div>
-              {/* /Footer Widget */}
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* /Footer Top */}
-      {/* Footer Bottom */}
-      <div className="footer-bottom">
-        <div className="container">
-          {/* Copyright */}
-          <div className="copyright">
-            <div className="row">
-              <div className="col-md-6">
-                <div className="privacy-policy">
+
+              <div className="col-lg-3 col-md-3 col-12">
+                {/* Footer Widget */}
+                <div className="footer-widget-three footer-menu-three footer-three-right">
+                  <h6 className="footer-three-title">For Instructor</h6>
                   <ul>
                     <li>
-                      <Link to="/term-condition">Terms</Link>
+                      <Link to="/instructor-profile">Profile</Link>
                     </li>
                     <li>
-                      <Link to="/privacy-policy">Privacy</Link>
+                      <Link to="/login">Login</Link>
+                    </li>
+                    <li>
+                      <Link to="/register">Register</Link>
+                    </li>
+                    <li>
+                      <Link to="/instructor-list">Instructor</Link>
+                    </li>
+                    <li>
+                      <Link to="/deposit-instructor-dashboard"> Dashboard</Link>
                     </li>
                   </ul>
                 </div>
+                {/* Footer Widget */}
               </div>
-              <div className="col-md-6">
-                <div className="copyright-text">
-                  <p className="mb-0">© 2023 DreamsLMS. All rights reserved.</p>
+
+              <div className="col-lg-3 col-md-3 col-12">
+                {/* Footer Widget */}
+                <div className="footer-widget-three footer-menu-three">
+                  <h6 className="footer-three-title">For Student</h6>
+                  <ul>
+                    <li>
+                      <Link to="/students-profile">Profile</Link>
+                    </li>
+                    <li>
+                      <Link to="/login">Login</Link>
+                    </li>
+                    <li>
+                      <Link to="/register">Register</Link>
+                    </li>
+                    <li>
+                      <Link to="/students-list">Student</Link>
+                    </li>
+                    <li>
+                      <Link to="/deposit-student-dashboard"> Dashboard</Link>
+                    </li>
+                  </ul>
+                </div>
+                {/* Footer Widget */}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Footer Top */}
+
+      {/* Footer Bottom */}
+      <div className="footer-three-bottom" data-aos="fade-up">
+        <div className="container">
+          {/* Copyright */}
+          <div className="copyright-three">
+            <div className="row">
+              <div className="col-md-12">
+                <div className="social-icon-three">
+                  <h6>Connect Socially</h6>
+                  <ul>
+                    <li>
+                      <Link
+                        to="/"
+                        target="_blank"
+                        className="feather-facebook-icon"
+                      >
+                        <Facebook size={14} />
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/"
+                        target="_blank"
+                        className="feather-twitter-icon"
+                      >
+                        <Twitter size={14} />
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/"
+                        target="_blank"
+                        className="feather-linkedin-icon"
+                      >
+                        <Linkedin size={14} />
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/"
+                        target="_blank"
+                        className="feather-youtube-icon"
+                      >
+                        <Youtube size={14} />
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+                <div className="privacy-policy-three">
+                  <ul>
+                    <li>
+                      <Link to="/term-condition">Terms & Condition</Link>
+                    </li>
+                    <li>
+                      <Link to="/privacy-policy">Privacy Policy</Link>
+                    </li>
+                    <li>
+                      <Link to="/support">Contact Us</Link>
+                    </li>
+                  </ul>
+                </div>
+                <div className="copyright-text-three">
+                  <p className="mb-0">
+                    &copy; 2023 DreamsLMS. All rights reserved.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
-          {/* /Copyright */}
+          {/* Copyright */}
         </div>
       </div>
-      {/* /Footer Bottom */}
+      {/* Footer Bottom */}
     </footer>
   );
 };
-
-export default Footer;
+export default Footer
