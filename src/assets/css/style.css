@@ -10413,6 +10413,7 @@ textarea:focus {
 .instructor-img {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
 }
 .best-course-instructor-info .instructor-img .instructor-name a {

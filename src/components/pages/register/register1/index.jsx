@@ -117,13 +117,13 @@ const RegisterOne = () => {
                   <div className="profile-box">
                     <div className="circle-bar circle-bar1 text-center">
                       <div className="circle-graph1" style={{ width: 120, height: 120 }}>
-                      <CircularProgressbarWithChildren value={percentage} text={`${percentage}%`} 
-                      styles={buildStyles({
-                        textColor:"#159F46",
-                        pathColor:"#159F46"
-                      })}>
-                        <div style={{ marginTop:"35px"}}>1 of 4 </div>
-                      </CircularProgressbarWithChildren>
+                        <CircularProgressbarWithChildren value={percentage} text={`${percentage}%`}
+                          styles={buildStyles({
+                            textColor: "#159F46",
+                            pathColor: "#159F46"
+                          })}>
+                          <div style={{ marginTop: "35px" }}>1 of 4 </div>
+                        </CircularProgressbarWithChildren>
                       </div>
                     </div>
                     <h3>Profile Compleation</h3>
@@ -162,7 +162,7 @@ const RegisterOne = () => {
                 <div className="col-lg-7">
                   <div className="personal-form">
                     <h4>Personal Details</h4>
-                    <form action="/register2">
+                    <form action="/register/step-2">
                       <div className="row">
                         <div className="col-lg-6">
                           <div className="form-group">
@@ -284,7 +284,7 @@ const RegisterOne = () => {
                           </div>
                         </div>
                         <div className="col-lg-12">
-                        <div className="form-check form-switch check-on">
+                          <div className="form-check form-switch check-on">
                             <input
                               className="form-check-input"
                               type="checkbox"
@@ -297,7 +297,7 @@ const RegisterOne = () => {
                             >
                               Use same address for Billing.
                             </label>
-                        </div>
+                          </div>
                           <div className="next-btn">
                             <button
                               className="btn btn-start"

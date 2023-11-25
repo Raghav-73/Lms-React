@@ -446,7 +446,7 @@ export default function InstructorGrid() {
                       <Link
                         className="page-link"
                         to="#;"
-                      
+
                       >
                         <i className="fas fa-angle-left"></i>
                       </Link>
@@ -540,7 +540,7 @@ export default function InstructorGrid() {
                           <input
                             type="checkbox"
                             name="select_specialist"
-                           
+
                           />
                           <span className="checkmark"></span> IT & Software (2)
                         </label>
@@ -600,7 +600,7 @@ export default function InstructorGrid() {
                           <input
                             type="checkbox"
                             name="select_specialist"
-                           
+
                           />
                           <span className="checkmark"></span> Nicole Brown
                         </label>

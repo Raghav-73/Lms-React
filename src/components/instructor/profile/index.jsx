@@ -24,7 +24,7 @@ export default function InstructorProfile() {
     <div className="main-wrapper">
       <InstructorHeader activeMenu={"Profile"} />
       {/* Breadcrumb */}
-      <div className="breadcrumb-bar">
+      {/* <div className="breadcrumb-bar">
         <div className="container">
           <div className="row">
             <div className="col-md-12 col-12">
@@ -49,7 +49,7 @@ export default function InstructorProfile() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* Breadcrumb */}
       {/* Breadcrumb */}
       <div

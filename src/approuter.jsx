@@ -2,16 +2,12 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import BlogDetails from "./components/blog/blogDetails";
 import BlogGrid from "./components/blog/blogGrid";
-// import BlogList from "./components/blog/bloglist";
-// import BlogMasonry from "./components/blog/blogMasonry";
-// import BlogModern from "./components/blog/blogModern";
+
 import Cart from "./components/pages/cart";
 import JobCategory from "./components/pages/category";
 import Checkout from "./components/pages/checkout";
 import AddCourse from "./components/pages/course/addCourse";
 import CourseDetails from "./components/pages/course/courseDetails";
-import CourseDetails1 from "./components/pages/course/courseDetails1";
-import CourseDetails2 from "./components/pages/course/courseDetails2";
 import CourseGrid from "./components/pages/course/courseGrid";
 import CourseLesson from "./components/pages/course/courseLesson";
 import CourseList from "./components/pages/course/courseList";
@@ -24,23 +20,19 @@ import ForgotPassword from "./components/pages/forgotPassword";
 import Login from "./components/pages/login";
 import Notification from "./components/pages/notification";
 import PrivacyPolicy from "./components/pages/policy";
+// import PricingPlan from "./components/pages/pricingPlan";
 import PricingPlan from "./components/pages/pricingPlan";
-import PricingPlan2 from "./components/pages/pricingPlan/pricingPlan2";
 import Register from "./components/pages/register";
-import RegisterOne from "./components/pages/register/register1";
-import RegisterTwo from "./components/pages/register/register2";
-import RegisterThree from "./components/pages/register/register3";
-import RegisterFour from "./components/pages/register/register4";
-import RegisterFive from "./components/pages/register/register5";
+import InstructorOne from "./components/pages/register/register1";
+import InstructorTwo from "./components/pages/register/register2";
+import InstructorThree from "./components/pages/register/register3";
+import InstructorFour from "./components/pages/register/register4";
+import InstructorFive from "./components/pages/register/register5";
 import Support from "./components/pages/support";
 import TermsCondition from "./components/pages/termsCondition";
 import Wishlist from "./components/pages/wishlist";
 
-//harish
-// import { Home } from "./components/home";
-// import { Home2 } from "./components/home2";
 import Home from "./components/home";
-// import { Home4 } from "./components/home4";
 import { Dashboard } from "./components/instructor/dashboard";
 import { InstructorList } from "./components/instructor/list";
 import InstructorGrid from "./components/instructor/grid";
@@ -57,13 +49,13 @@ import InstructorTickets from "./components/instructor/tickets";
 import InstructorChat from "./components/instructor/chat";
 import InstructorDeleteProfile from "./components/instructor/deleteProfile";
 import InstructorEdit from "./components/instructor/edit";
-import InstructorGrid2 from "./components/instructor/grid2";
 import InstructorLinkedAccount from "./components/instructor/linkedAccount";
 import InstructorNewTickets from "./components/instructor/newTickets";
 import InstructorProfile from "./components/instructor/profile";
 import InstructorProfilePrivacy from "./components/instructor/profilePrivacy";
 import InstructorStudentGrid from "./components/instructor/studentGrid";
 import InstructorStudentList from "./components/instructor/studentList";
+
 import StudentEditProfile from "./components/student/editProfile";
 import StudentAccounts from "./components/student/accounts";
 import StudentBilling from "./components/student/billing";
@@ -81,7 +73,6 @@ import StudentTickets from "./components/student/tickets";
 import StudentViewTickets from "./components/student/viewTickets";
 import StudentProfile from "./components/student/profile";
 import StudentsGrid from "./components/student/grid";
-import StudentsGrid2 from "./components/student/grid2";
 import StudentsList from "./components/student/list";
 import InstructorDepositDashboard from "./components/instructor/deposit";
 import StudentDepositDashboard from "./components/student/depositDashboard";
@@ -114,15 +105,13 @@ const Approuter = () => {
 
         {/* Pages */}
         <Route path="/page-notification" element={<Notification />} />
+        {/* <Route path="/pricing-plan" element={<PricingPlan />} /> */}
         <Route path="/pricing-plan" element={<PricingPlan />} />
-        <Route path="/pricing-plan2" element={<PricingPlan2 />} />
         <Route path="/wishlist" element={<Wishlist />} />
         <Route path="/add-course" element={<AddCourse />} />
         <Route path="/course-list" element={<CourseList />} />
         <Route path="/course-grid" element={<CourseGrid />} />
         <Route path="/course-details" element={<CourseDetails />} />
-        <Route path="/course-details1" element={<CourseDetails1 />} />
-        <Route path="/course-details2" element={<CourseDetails2 />} />
         <Route path="/course-lesson" element={<CourseLesson />} />
         <Route path="/come-soon" element={<ComingSoon />} />
         <Route path="/error-404" element={<Error404 />} />
@@ -136,11 +125,11 @@ const Approuter = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/new-password" element={<NewPassword />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/register1" element={<RegisterOne />} />
-        <Route path="/register2" element={<RegisterTwo />} />
-        <Route path="/register3" element={<RegisterThree />} />
-        <Route path="/register4" element={<RegisterFour />} />
-        <Route path="/register5" element={<RegisterFive />} />
+        <Route path="/register/step-1" element={<InstructorOne />} />
+        <Route path="/register/step-2" element={<InstructorTwo />} />
+        <Route path="/register/step-3" element={<InstructorThree />} />
+        <Route path="/register/step-4" element={<InstructorFour />} />
+        <Route path="/register/step-5" element={<InstructorFive />} />
         <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/term-condition" element={<TermsCondition />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
@@ -175,7 +164,6 @@ const Approuter = () => {
           element={<InstructorDeleteProfile />}
         />
         <Route path="/instructor-edit" element={<InstructorEdit />} />
-        <Route path="/instructor-grid-2" element={<InstructorGrid2 />} />
         <Route
           path="/instructor-linked-account"
           element={<InstructorLinkedAccount />}
@@ -249,7 +237,6 @@ const Approuter = () => {
         />
         <Route path="/students-profile" element={<StudentProfile />} />
         <Route path="/students-grid" element={<StudentsGrid />} />
-        <Route path="/students-grid2" element={<StudentsGrid2 />} />
         <Route path="/students-list" element={<StudentsList />} />
         <Route path="/course-student" element={<CourseStudent />} />
         <Route path="/course-wishlist" element={<CourseWishlist />} />

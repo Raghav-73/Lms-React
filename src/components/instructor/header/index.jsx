@@ -3,7 +3,7 @@ import Header from '../../header'
 
 export const InstructorHeader = () => {
   return (
-    <div className="p-2"><Header /></div>
+    <div className="p-2 mb-5"><Header /></div>
   )
 }
 

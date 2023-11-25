@@ -11,31 +11,31 @@ const RegisterFive = () => {
 
   const percentage = 100;
 
-    var settings = {
-        //autoWidth: true,
-        items: 2,
-        margin: 25,
-        dots: true,
-        nav: true,
-        navText: [
-          '<i className="fas fa-arrow-left"></i>',
-          '<i className="fas fa-arrow-right"></i>',
-        ],
-    
-        loop: true,
-        responsiveClass: true,
-        responsive: {
-          0: {
-            items: 1,
-          },
-          768: {
-            items: 1,
-          },
-          1170: {
-            items: 1,
-          },
-        },
-    };
+  var settings = {
+    //autoWidth: true,
+    items: 2,
+    margin: 25,
+    dots: true,
+    nav: true,
+    navText: [
+      '<i className="fas fa-arrow-left"></i>',
+      '<i className="fas fa-arrow-right"></i>',
+    ],
+
+    loop: true,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      768: {
+        items: 1,
+      },
+      1170: {
+        items: 1,
+      },
+    },
+  };
 
   return (
     <>
@@ -43,7 +43,7 @@ const RegisterFive = () => {
         <div className="row">
           {/* Login Banner */}
           <div className="col-lg-4 col-md-6 login-bg">
-            <OwlCarousel 
+            <OwlCarousel
               {...settings}
               className="owl-carousel login-slide owl-theme">
               <div className="welcome-login register-step">
@@ -120,24 +120,24 @@ const RegisterFive = () => {
                     alt="Logo"
                   />
                   <div className="back-home">
-                    <Link  to="//login">Back to Home</Link>
+                    <Link to="//login">Back to Home</Link>
                   </div>
                 </div>
                 <h1>Become An Instructor</h1>
                 <div className="row">
                   <div className="col-lg-5">
                     <div className="profile-box">
-                    <div className="circle-bar circle-bar1 text-center">
-                      <div className="circle-graph1" style={{ width: 120, height: 120, backGroungColor:"#159F46" }}>
-                      <CircularProgressbarWithChildren value={percentage} text={`${percentage}%`} 
-                      styles={buildStyles({
-                        textColor:"#159F46",
-                        pathColor:"#159F46"
-                      })}>
-                        <div style={{ marginTop:"35px"}}>4 of 4 </div>
-                      </CircularProgressbarWithChildren>
+                      <div className="circle-bar circle-bar1 text-center">
+                        <div className="circle-graph1" style={{ width: 120, height: 120, backGroungColor: "#159F46" }}>
+                          <CircularProgressbarWithChildren value={percentage} text={`${percentage}%`}
+                            styles={buildStyles({
+                              textColor: "#159F46",
+                              pathColor: "#159F46"
+                            })}>
+                            <div style={{ marginTop: "35px" }}>4 of 4 </div>
+                          </CircularProgressbarWithChildren>
+                        </div>
                       </div>
-                    </div>
                       <h3>Profile Compleation</h3>
                       <div className="personal-detail d-flex align-items-center">
                         <span className="active-color">
@@ -187,7 +187,7 @@ const RegisterFive = () => {
                       <div className="your-done">
                         <p>
                           If you need more info, please{" "}
-                          <Link  to="/login">Sign In.</Link>
+                          <Link to="/login">Sign In.</Link>
                         </p>
                         <p>
                           Writing headlines for blog posts is as much an art as
@@ -198,8 +198,8 @@ const RegisterFive = () => {
                       </div>
                       <div className="btn-group work-done d-flex">
                         <div className="back-btn">
-                          <Link 
-                            to="/register3"
+                          <Link
+                            to="/register/step-3"
                             className="btn btn-back"
                           >
                             back

@@ -18,12 +18,12 @@ const Header = ({ activeMenu = ' ' }) => {
   // Mobile Menu toggle
   const [setMobileMenu] = useState(false);
   const [mobileSubMenu2, setMobileSubMenu2] = useState(false);
-  const [mobileSubMenu22, setMobileSubMenu22] = useState(false);
   const [mobileSubMenu3, setMobileSubMenu3] = useState(false);
-  const [mobileSubMenu32, setMobileSubMenu32] = useState(false);
-  const [mobileSubMenu4, setMobileSubMenu4] = useState(false);
-  const [mobileSubMenu42, setMobileSubMenu42] = useState(false);
-  const [mobileSubMenu43, setMobileSubMenu43] = useState(false);
+  // const [mobileSubMenu22, setMobileSubMenu22] = useState(false);
+  // const [mobileSubMenu32, setMobileSubMenu32] = useState(false);
+  // const [mobileSubMenu4, setMobileSubMenu4] = useState(false);
+  // const [mobileSubMenu42, setMobileSubMenu42] = useState(false);
+  // const [mobileSubMenu43, setMobileSubMenu43] = useState(false);
 
   const openMobileMenu = () => {
     document.body.classList.add("menu-opened");
@@ -39,30 +39,30 @@ const Header = ({ activeMenu = ' ' }) => {
     e.preventDefault();
     setMobileSubMenu2(!mobileSubMenu2);
   };
-  const openMobileSubMenu22 = (e) => {
-    e.preventDefault();
-    setMobileSubMenu22(!mobileSubMenu22);
-  };
+  // const openMobileSubMenu22 = (e) => {
+  //   e.preventDefault();
+  //   setMobileSubMenu22(!mobileSubMenu22);
+  // };
   const openMobileSubMenu3 = (e) => {
     e.preventDefault();
     setMobileSubMenu3(!mobileSubMenu3);
   };
-  const openMobileSubMenu32 = (e) => {
-    e.preventDefault();
-    setMobileSubMenu32(!mobileSubMenu32);
-  };
-  const openMobileSubMenu4 = (e) => {
-    e.preventDefault();
-    setMobileSubMenu4(!mobileSubMenu4);
-  };
-  const openMobileSubMenu42 = (e) => {
-    e.preventDefault();
-    setMobileSubMenu42(!mobileSubMenu42);
-  };
-  const openMobileSubMenu43 = (e) => {
-    e.preventDefault();
-    setMobileSubMenu43(!mobileSubMenu43);
-  };
+  // const openMobileSubMenu32 = (e) => {
+  //   e.preventDefault();
+  //   setMobileSubMenu32(!mobileSubMenu32);
+  // };
+  // const openMobileSubMenu4 = (e) => {
+  //   e.preventDefault();
+  //   setMobileSubMenu4(!mobileSubMenu4);
+  // };
+  // const openMobileSubMenu42 = (e) => {
+  //   e.preventDefault();
+  //   setMobileSubMenu42(!mobileSubMenu42);
+  // };
+  // const openMobileSubMenu43 = (e) => {
+  //   e.preventDefault();
+  //   setMobileSubMenu43(!mobileSubMenu43);
+  // };
 
   window.addEventListener("scroll", changeHeaderBackground);
   return (
@@ -125,22 +125,20 @@ const Header = ({ activeMenu = ' ' }) => {
                       mobileSubMenu2 ? "submenu submenuShow" : "submenu"
                     }
                   >
-                    <li className={activeMenu === "Dashboard" ? "active" : ""}>
-                      <Link to="/instructor-dashboard">Dashboard</Link>
-                    </li>
+
                     <li className={
                       activeMenu === "List" || activeMenu === "Grid"
                         ? "has-submenu active"
                         : "has-submenu"
                     }>
                       <Link to="/instructor-list">
-                        Instructor
-                        <i
+                        Instructors
+                        {/* <i
                           className="fas fa-chevron-right listMob"
                           onClick={openMobileSubMenu22}
-                        ></i>
+                        ></i> */}
                       </Link>
-                      <ul
+                      {/* <ul
                         className={
                           mobileSubMenu22 ? "submenu submenuShow" : "submenu"
                         }
@@ -151,7 +149,15 @@ const Header = ({ activeMenu = ' ' }) => {
                         <li className={activeMenu === "Grid" ? "active" : ""}>
                           <Link to="/instructor-grid">Grid</Link>
                         </li>
-                      </ul>
+                      </ul> */}
+                    </li>
+                    <li className={activeMenu === "Grid" ? "active" : ""}>
+                      <Link to="/course-list">Browse Courses</Link>
+                    </li>
+
+                    {/* After Auth Only for instructors. */}
+                    <li className={activeMenu === "Dashboard" ? "active" : ""}>
+                      <Link to="/instructor-dashboard">Dashboard</Link>
                     </li>
                     <li className={activeMenu === "Courses" ? "active" : ""}>
                       <Link to="/instructor-course">My Course</Link>
@@ -165,7 +171,10 @@ const Header = ({ activeMenu = ' ' }) => {
                     <li className={activeMenu === "Orders" ? "active" : ""}>
                       <Link to="/instructor-orders">Orders</Link>
                     </li>
-                    <li className={activeMenu === "Payouts" ? "active" : ""}>
+                    <li className={activeMenu === "Dashboard" ? "active" : ""}>
+                      <Link to="/instructor-dashboard">Settings</Link>
+                    </li>
+                    {/* <li className={activeMenu === "Payouts" ? "active" : ""}>
                       <Link to="/instructor-payouts">Payouts</Link>
                     </li>
                     <li className={activeMenu === "Tickets" ? "active" : ""}>
@@ -201,7 +210,7 @@ const Header = ({ activeMenu = ' ' }) => {
                       <Link to="/instructor-linked-account">
                         Linked Accounts
                       </Link>
-                    </li>
+                    </li> */}
                   </ul>
                 </li>
                 <li className="has-submenu">
@@ -219,7 +228,7 @@ const Header = ({ activeMenu = ' ' }) => {
                         : "submenu first-submenu"
                     }
                   >
-                    <li className="has-submenu ">
+                    {/* <li className="has-submenu ">
                       <Link to="/students-list">
                         Student
                         <i
@@ -239,14 +248,17 @@ const Header = ({ activeMenu = ' ' }) => {
                           <Link to="/students-grid">Grid</Link>
                         </li>
                       </ul>
-                    </li>
+                    </li> */}
                     <li>
                       <Link to="/setting-edit-profile">Student Profile</Link>
                     </li>
                     <li>
-                      <Link to="/setting-student-security">Security</Link>
+                      <Link to="/deposit-student-dashboard">Student Dashboard</Link>
                     </li>
                     <li>
+                      <Link to="/course-student">My Courses</Link>
+                    </li>
+                    {/*<li>
                       <Link to="/setting-student-social-profile">
                         Social profile
                       </Link>
@@ -278,13 +290,13 @@ const Header = ({ activeMenu = ' ' }) => {
                     </li>
                     <li>
                       <Link to="/setting-student-invoice">Invoice</Link>
-                    </li>
+                    </li> */}
                     <li>
                       <Link to="/setting-support-tickets">Support Tickets</Link>
                     </li>
                   </ul>
                 </li>
-                <li className="has-submenu">
+                {/* <li className="has-submenu">
                   <Link to="">
                     Pages{" "}
                     <i
@@ -387,7 +399,7 @@ const Header = ({ activeMenu = ' ' }) => {
                       <Link to="/forgot-password">Forgot Password</Link>
                     </li>
                   </ul>
-                </li>
+                </li> */}
                 <li className="has-submenu">
                   <Link to="/blog-grid">
                     Blog

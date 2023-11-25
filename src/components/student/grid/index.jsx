@@ -1,5 +1,6 @@
 import React from "react";
-import StudentHeader from "../header";
+import { Grid, List } from "react-feather";
+import { Link } from "react-router-dom";
 import Footer from "../../footer";
 import {
   LocIcon,
@@ -14,14 +15,13 @@ import {
   User5,
   User6,
 } from "../../imagepath";
-import { Grid, List } from "react-feather";
-import { Link } from "react-router-dom";
+import StudentHeader from "../header";
 
-export default function StudentsGrid() {
+export default function StudentsGrid2() {
   return (
     <div className="main-wrapper">
-      <StudentHeader activeMenu={"Grid1"} />
-      {/* Breadcrumb */}
+      <StudentHeader activeMenu={"Grid2"} />
+      {/* BreadCrumb */}
       <div className="breadcrumb-bar">
         <div className="container">
           <div className="row">
@@ -41,7 +41,7 @@ export default function StudentsGrid() {
           </div>
         </div>
       </div>
-      {/* Breadcrumb */}
+      {/* BreadCrumb */}
       {/* Page Wrapper */}
       <div className="page-content">
         <div className="container">
@@ -53,11 +53,14 @@ export default function StudentsGrid() {
                   <div className="col-lg-6">
                     <div className="d-flex align-items-center">
                       <div className="view-icons">
-                        <Link to="/students-grid" className="grid-view active">
-                          <Grid size={19} />
+                        <Link
+                          to="students-grid"
+                          className="grid-view active"
+                        >
+                          <Grid size={16} />
                         </Link>
-                        <Link to="/students-list" className="list-view">
-                          <List size={19} />
+                        <Link to="students-list" className="list-view">
+                          <List size={16} />
                         </Link>
                       </div>
                       <div className="show-result">
@@ -71,7 +74,7 @@ export default function StudentsGrid() {
 
               <div className="row">
                 <div className="col-lg-3 col-md-6 d-flex">
-                  <div className="student-box flex-fill">
+                  <div className="student-box student-grid flex-fill">
                     <div className="student-img">
                       <Link to="/students-profile">
                         <img
@@ -81,20 +84,20 @@ export default function StudentsGrid() {
                         />
                       </Link>
                     </div>
-                    <div className="student-content pb-0">
+                    <div className="student-content">
                       <h5>
                         <Link to="/students-profile">Charles Dickens</Link>
                       </h5>
                       <h6>Student</h6>
                       <div className="loc-blk d-flex align-items-center justify-content-center">
                         <img src={LocIcon} className="me-1" alt="" />
-                        <p>Iceland</p>
+                        <p>Louisiana</p>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div className="col-lg-3 col-md-6 d-flex">
-                  <div className="student-box flex-fill">
+                  <div className="student-box student-grid flex-fill">
                     <div className="student-img">
                       <Link to="/students-profile">
                         <img
@@ -104,216 +107,9 @@ export default function StudentsGrid() {
                         />
                       </Link>
                     </div>
-                    <div className="student-content pb-0">
+                    <div className="student-content">
                       <h5>
                         <Link to="/students-profile">Gabriel Palmer</Link>
-                      </h5>
-                      <h6>Student</h6>
-                      <div className="loc-blk d-flex align-items-center justify-content-center">
-                        <img src={LocIcon} className="me-1" alt="" />
-                        <p>France</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-3 col-md-6 d-flex">
-                  <div className="student-box flex-fill">
-                    <div className="student-img">
-                      <Link to="/students-profile">
-                        <img
-                          className="img-fluid"
-                          alt="Students Info"
-                          src={User3}
-                        />
-                      </Link>
-                    </div>
-                    <div className="student-content pb-0">
-                      <h5>
-                        <Link to="/students-profile">James Lemire</Link>
-                      </h5>
-                      <h6>Student</h6>
-                      <div className="loc-blk d-flex align-items-center justify-content-center">
-                        <img src={LocIcon} className="me-1" alt="" />
-                        <p>Italy</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-3 col-md-6 d-flex">
-                  <div className="student-box flex-fill">
-                    <div className="student-img">
-                      <Link to="/students-profile">
-                        <img
-                          className="img-fluid"
-                          alt="Students Info"
-                          src={User4}
-                        />
-                      </Link>
-                    </div>
-                    <div className="student-content pb-0">
-                      <h5>
-                        <Link to="/students-profile">Olivia Murphy</Link>
-                      </h5>
-                      <h6>Student</h6>
-                      <div className="loc-blk d-flex align-items-center justify-content-center">
-                        <img src={LocIcon} className="me-1" alt="" />
-                        <p>Brazil</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-3 col-md-6 d-flex">
-                  <div className="student-box flex-fill">
-                    <div className="student-img">
-                      <Link to="/students-profile">
-                        <img
-                          className="img-fluid"
-                          alt="Students Info"
-                          src={User5}
-                        />
-                      </Link>
-                    </div>
-                    <div className="student-content pb-0">
-                      <h5>
-                        <Link to="/students-profile">Rebecca Swartz</Link>
-                      </h5>
-                      <h6>Student</h6>
-                      <div className="loc-blk d-flex align-items-center justify-content-center">
-                        <img src={LocIcon} className="me-1" alt="" />
-                        <p>Louisiana</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-3 col-md-6 d-flex">
-                  <div className="student-box flex-fill">
-                    <div className="student-img">
-                      <Link to="/students-profile">
-                        <img
-                          className="img-fluid"
-                          alt="Students Info"
-                          src={User6}
-                        />
-                      </Link>
-                    </div>
-                    <div className="student-content pb-0">
-                      <h5>
-                        <Link to="/students-profile">Betty Richards</Link>
-                      </h5>
-                      <h6>Student</h6>
-                      <div className="loc-blk d-flex align-items-center justify-content-center">
-                        <img src={LocIcon} className="me-1" alt="" />
-                        <p>Iceland</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-3 col-md-6 d-flex">
-                  <div className="student-box flex-fill">
-                    <div className="student-img">
-                      <Link to="/students-profile">
-                        <img
-                          className="img-fluid"
-                          alt="Students Info"
-                          src={User14}
-                        />
-                      </Link>
-                    </div>
-                    <div className="student-content pb-0">
-                      <h5>
-                        <Link to="/students-profile">Jeffrey Montgomery</Link>
-                      </h5>
-                      <h6>Student</h6>
-                      <div className="loc-blk d-flex align-items-center justify-content-center">
-                        <img src={LocIcon} className="me-1" alt="" />
-                        <p>United Kingdom</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-3 col-md-6 d-flex">
-                  <div className="student-box flex-fill">
-                    <div className="student-img">
-                      <Link to="/students-profile">
-                        <img
-                          className="img-fluid"
-                          alt="Students Info"
-                          src={User11}
-                        />
-                      </Link>
-                    </div>
-                    <div className="student-content pb-0">
-                      <h5>
-                        <Link to="/students-profile">Brooke Hayes</Link>
-                      </h5>
-                      <h6>Student</h6>
-                      <div className="loc-blk d-flex align-items-center justify-content-center">
-                        <img src={LocIcon} className="me-1" alt="" />
-                        <p>United States</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-3 col-md-6 d-flex">
-                  <div className="student-box flex-fill">
-                    <div className="student-img">
-                      <Link to="/students-profile">
-                        <img
-                          className="img-fluid"
-                          alt="Students Info"
-                          src={User12}
-                        />
-                      </Link>
-                    </div>
-                    <div className="student-content pb-0">
-                      <h5>
-                        <Link to="/students-profile">Gertrude D. Shorter</Link>
-                      </h5>
-                      <h6>Student</h6>
-                      <div className="loc-blk d-flex align-items-center justify-content-center">
-                        <img src={LocIcon} className="me-1" alt="" />
-                        <p>Louisiana</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-3 col-md-6 d-flex">
-                  <div className="student-box flex-fill">
-                    <div className="student-img">
-                      <Link to="/students-profile">
-                        <img
-                          className="img-fluid"
-                          alt="Students Info"
-                          src={User13}
-                        />
-                      </Link>
-                    </div>
-                    <div className="student-content pb-0">
-                      <h5>
-                        <Link to="/students-profile">David L. Garza</Link>
-                      </h5>
-                      <h6>Student</h6>
-                      <div className="loc-blk d-flex align-items-center justify-content-center">
-                        <img src={LocIcon} className="me-1" alt="" />
-                        <p>Spain</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-3 col-md-6 d-flex">
-                  <div className="student-box flex-fill">
-                    <div className="student-img">
-                      <Link to="/students-profile">
-                        <img
-                          className="img-fluid"
-                          alt="Students Info"
-                          src={User4}
-                        />
-                      </Link>
-                    </div>
-                    <div className="student-content pb-0">
-                      <h5>
-                        <Link to="/students-profile">Vivian E. Winders</Link>
                       </h5>
                       <h6>Student</h6>
                       <div className="loc-blk d-flex align-items-center justify-content-center">
@@ -324,7 +120,53 @@ export default function StudentsGrid() {
                   </div>
                 </div>
                 <div className="col-lg-3 col-md-6 d-flex">
-                  <div className="student-box flex-fill">
+                  <div className="student-box student-grid flex-fill">
+                    <div className="student-img">
+                      <Link to="/students-profile">
+                        <img
+                          className="img-fluid"
+                          alt="Students Info"
+                          src={User3}
+                        />
+                      </Link>
+                    </div>
+                    <div className="student-content">
+                      <h5>
+                        <Link to="/students-profile">James Lemire</Link>
+                      </h5>
+                      <h6>Student</h6>
+                      <div className="loc-blk d-flex align-items-center justify-content-center">
+                        <img src={LocIcon} className="me-1" alt="" />
+                        <p>Louisiana</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-lg-3 col-md-6 d-flex">
+                  <div className="student-box student-grid flex-fill">
+                    <div className="student-img">
+                      <Link to="/students-profile">
+                        <img
+                          className="img-fluid"
+                          alt="Students Info"
+                          src={User4}
+                        />
+                      </Link>
+                    </div>
+                    <div className="student-content">
+                      <h5>
+                        <Link to="/students-profile">Olivia Murphy</Link>
+                      </h5>
+                      <h6>Student</h6>
+                      <div className="loc-blk d-flex align-items-center justify-content-center">
+                        <img src={LocIcon} className="me-1" alt="" />
+                        <p>Spain</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-lg-3 col-md-6 d-flex">
+                  <div className="student-box student-grid flex-fill">
                     <div className="student-img">
                       <Link to="/students-profile">
                         <img
@@ -334,14 +176,179 @@ export default function StudentsGrid() {
                         />
                       </Link>
                     </div>
-                    <div className="student-content pb-0">
+                    <div className="student-content">
+                      <h5>
+                        <Link to="/students-profile">Rebecca Swartz</Link>
+                      </h5>
+                      <h6>Student</h6>
+                      <div className="loc-blk d-flex align-items-center justify-content-center">
+                        <img src={LocIcon} className="me-1" alt="" />
+                        <p>Tunisia</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-lg-3 col-md-6 d-flex">
+                  <div className="student-box student-grid flex-fill">
+                    <div className="student-img">
+                      <Link to="/students-profile">
+                        <img
+                          className="img-fluid"
+                          alt="Students Info"
+                          src={User6}
+                        />
+                      </Link>
+                    </div>
+                    <div className="student-content">
+                      <h5>
+                        <Link to="/students-profile">Betty Richards</Link>
+                      </h5>
+                      <h6>Student</h6>
+                      <div className="loc-blk d-flex align-items-center justify-content-center">
+                        <img src={LocIcon} className="me-1" alt="" />
+                        <p>United States</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-lg-3 col-md-6 d-flex">
+                  <div className="student-box student-grid flex-fill">
+                    <div className="student-img">
+                      <Link to="/students-profile">
+                        <img
+                          className="img-fluid"
+                          alt="Students Info"
+                          src={User11}
+                        />
+                      </Link>
+                    </div>
+                    <div className="student-content">
+                      <h5>
+                        <Link to="/students-profile">
+                          Jeffrey Montgomery
+                        </Link>
+                      </h5>
+                      <h6>Student</h6>
+                      <div className="loc-blk d-flex align-items-center justify-content-center">
+                        <img src={LocIcon} className="me-1" alt="" />
+                        <p>Louisiana</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-lg-3 col-md-6 d-flex">
+                  <div className="student-box student-grid flex-fill">
+                    <div className="student-img">
+                      <Link to="/students-profile">
+                        <img
+                          className="img-fluid"
+                          alt="Students Info"
+                          src={User12}
+                        />
+                      </Link>
+                    </div>
+                    <div className="student-content">
+                      <h5>
+                        <Link to="/students-profile">Brooke Hayes</Link>
+                      </h5>
+                      <h6>Student</h6>
+                      <div className="loc-blk d-flex align-items-center justify-content-center">
+                        <img src={LocIcon} className="me-1" alt="" />
+                        <p>Louisiana</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-lg-3 col-md-6 d-flex">
+                  <div className="student-box student-grid flex-fill">
+                    <div className="student-img">
+                      <Link to="/students-profile">
+                        <img
+                          className="img-fluid"
+                          alt="Students Info"
+                          src={User13}
+                        />
+                      </Link>
+                    </div>
+                    <div className="student-content">
+                      <h5>
+                        <Link to="/students-profile">
+                          Gertrude D. Shorter
+                        </Link>
+                      </h5>
+                      <h6>Student</h6>
+                      <div className="loc-blk d-flex align-items-center justify-content-center">
+                        <img src={LocIcon} className="me-1" alt="" />
+                        <p>Brazil</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-lg-3 col-md-6 d-flex">
+                  <div className="student-box student-grid flex-fill">
+                    <div className="student-img">
+                      <Link to="/students-profile">
+                        <img
+                          className="img-fluid"
+                          alt="Students Info"
+                          src={User14}
+                        />
+                      </Link>
+                    </div>
+                    <div className="student-content">
+                      <h5>
+                        <Link to="/students-profile">David L. Garza</Link>
+                      </h5>
+                      <h6>Student</h6>
+                      <div className="loc-blk d-flex align-items-center justify-content-center">
+                        <img src={LocIcon} className="me-1" alt="" />
+                        <p>Italy</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-lg-3 col-md-6 d-flex">
+                  <div className="student-box student-grid flex-fill">
+                    <div className="student-img">
+                      <Link to="/students-profile">
+                        <img
+                          className="img-fluid"
+                          alt="Students Info"
+                          src={User3}
+                        />
+                      </Link>
+                    </div>
+                    <div className="student-content">
+                      <h5>
+                        <Link to="/students-profile">Vivian E. Winders</Link>
+                      </h5>
+                      <h6>Student</h6>
+                      <div className="loc-blk d-flex align-items-center justify-content-center">
+                        <img src={LocIcon} className="me-1" alt="" />
+                        <p>France</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-lg-3 col-md-6 d-flex">
+                  <div className="student-box student-grid flex-fill">
+                    <div className="student-img">
+                      <Link to="/students-profile">
+                        <img
+                          className="img-fluid"
+                          alt="Students Info"
+                          src={User5}
+                        />
+                      </Link>
+                    </div>
+                    <div className="student-content">
                       <h5>
                         <Link to="/students-profile">Sean K. Leon</Link>
                       </h5>
                       <h6>Student</h6>
                       <div className="loc-blk d-flex align-items-center justify-content-center">
                         <img src={LocIcon} className="me-1" alt="" />
-                        <p>United States</p>
+                        <p>Iceland</p>
                       </div>
                     </div>
                   </div>
